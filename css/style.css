@@ -1,0 +1,27 @@
+#profilePicture {
+    float: left;
+    margin: 0px 20px 20px 0px;
+}
+
+* {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-weight: bold;
+    font-style: italic;
+    color: gray;
+}
+
+.content {
+    padding: 0px;
+}
+
+hr.fancy {
+    background-color: none;
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
