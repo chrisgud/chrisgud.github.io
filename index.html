@@ -1,75 +1,213 @@
 <!DOCTYPE html>
 <html lang="en-us">
+<!-- 
+
+
+* List of projects. For each project make sure you have the following:
+
+  * Project title
+
+  * Link to the deployed version
+
+  * Link to the code on GitHub
+
+#### Design
+
+The content of your portfolio page is a lot more important than the aesthetics. That said, there are a couple basic requirements your portfolio page should meet:
+
+* Mobile-friendliness: you don't need advanced responsive styles, but you should ensure that your portfolio page is still readable on different screen sizes
+
+* Readability: make sure the font size is large enough to read, and that the colors don't cause eye strain.
+
+### Suggested: Update Portfolio Employer Competitive
+
+To receive an "A" on this assignment, you should also meet the following requirements
+to ensure your portfolio site will help you be [employer competitive](https://drive.google.com/file/d/0BwhzeIUMYf1nV2JQcGdkU3ktcnFBLUZ4X09VSXliTUtJZWsw/view).
+
+#### Competitive Content
+
+* At least 3 deployed projects
+
+* External content:
+
+  * Update your LinkedIn with the projects you've worked on so far
+
+  * Update the README for each project you linked to with a description of the problem,
+  how you solved it, and some information about your technical approach
+
+  * Suggested: refactor some of your code from earlier assignments to make them more readable
+
+#### Competitive Design
+
+Unfortunately, this is where it gets a little bit subjective. Your site should look
+"polished." Here are a few guidelines on what that means:
+
+* Mobile-first design: you should be proud to pull out your phone and share
+your portfolio site with a friend, family member, or someone at a meetup.
+
+* Polish: choose a color palette for your site so it doesn't just look like
+the default bootstrap theme or an unstyled HTML site.
+
+* Images: add a meaningful screenshot for each of your projects
+
+If you want a slick-looking site, but don't feel good about your CSS skills,
+check out CV, Resume, and Portfolio site templates on [ThemeForest](https://themeforest.net/category/site-templates?tags=cv,resume,portfolio)
+-->
 
 <head>
     <meta charset="UTF-8">
-    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="header">
-            <!-- Section 1: Navbar-->
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class='row'>
+            <div class='col-md-6'>
 
-                <a class="navbar-brand bg-dark text-white p-4">Chris Gudmundsson</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class='personalInfo bg-light p-3 my-3'>
+                    <h1 class='text-center my-3'>About Me</h1>
 
-                <!-- Collapsible button -->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ml-auto">
-
-                        <!-- The links of our navbar -->
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">About
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+                    <img id="profilePicture" src="media/cat100px.png" alt="cat picture?">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, molestiae modi accusantium animi magnam
+                        veniam, impedit asperiores sint consequuntur debitis fugit quibusdam dolor, iusto sed porro ab minus
+                        voluptatibus amet.
+                    </p>
+                    <p>Ut lorem velit, laoreet sit amet ex vitae, vehicula faucibus nisi. Phasellus sagittis pellentesque felis,
+                        eu interdum quam tristique et. Ut aliquet suscipit porta. Vestibulum ante ipsum primis in faucibus
+                        orci luctus et ultrices posuere cubilia Curae; Quisque faucibus nisi vel tortor interdum sagittis
+                        quis in diam. Duis congue vehicula tempor. In eleifend nisi ac lacinia placerat. Morbi pretium eros
+                        at libero semper accumsan sit amet eu libero. Phasellus nec massa ex. Nullam convallis eu nibh gravida
+                        auctor. Cras pulvinar sem id libero molestie blandit. Morbi finibus neque a eleifend pharetra. Donec
+                        eget laoreet nulla.</P>
                 </div>
-            </nav>
-        </div>
-        <br>
-        <h1>About Me</h1>
-        <hr class="fancy">
-        <div class="content bg-light p-3">
+                <div class='row my-3'>
+                    <div class='col'>
+                        <div class='contactInfo bg-light p-4'>
+                            <h1 class='text-center'>Contact</h1>
+                            <form>
+                                <div class="form-group">
+                                    <label for="inputName">Name</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Enter Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputMessage">Message</label>
+                                    <textarea class="form-control" id="inputMessage" rows="8"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <img id="profilePicture" src="media/cat100px.png" alt="cat picture?">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, molestiae modi accusantium animi magnam veniam,
-                impedit asperiores sint consequuntur debitis fugit quibusdam dolor, iusto sed porro ab minus voluptatibus
-                amet.
-            </p>
-            <p>Ut lorem velit, laoreet sit amet ex vitae, vehicula faucibus nisi. Phasellus sagittis pellentesque felis, eu
-                interdum quam tristique et. Ut aliquet suscipit porta. Vestibulum ante ipsum primis in faucibus orci luctus
-                et ultrices posuere cubilia Curae; Quisque faucibus nisi vel tortor interdum sagittis quis in diam. Duis
-                congue vehicula tempor. In eleifend nisi ac lacinia placerat. Morbi pretium eros at libero semper accumsan
-                sit amet eu libero. Phasellus nec massa ex. Nullam convallis eu nibh gravida auctor. Cras pulvinar sem id
-                libero molestie blandit. Morbi finibus neque a eleifend pharetra. Donec eget laoreet nulla.</P>
-            <p>Curabitur eu laoreet odio. Aliquam pulvinar odio eu neque commodo, quis pretium tortor finibus. Vestibulum id
-                justo convallis ipsum consectetur porttitor. Pellentesque sit amet mauris ac ipsum blandit porta sit amet
-                id metus. In hac habitasse platea dictumst. Etiam laoreet pulvinar nunc, eget elementum odio euismod vitae.
-                Mauris lacus mi, aliquam ut mauris tempus, mollis finibus nisl. Maecenas eget neque lacinia urna euismod
-                ultrices. Nullam accumsan tristique diam a egestas. Nunc dapibus posuere felis, vel semper justo sollicitudin
-                eget. Integer vulputate risus dui, ut hendrerit nunc posuere ac. Vestibulum at libero tortor. Fusce nec hendrerit
-                dolor.
-            </p>
+
+            <div class='col-md-6 my-3'>
+                <div class='portfolioInfo bg-light p-3'>
+                    <h1 class='text-center my-3'>Portfolio</h1>
+                    <div class="row">
+                        <div class="col Aligner">
+                            <div class="card text-center bg-dark text-black m-2 Aligner-item">
+                                <img class="card-img" src="media/WordGuess.png" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column">
+                                    <h5 class="card-title bg-light">
+                                        <a href='https://chrisgud.github.io/Word-Guess-Game/'>Word Guess Game</a> -
+                                        <a href='https://github.com/chrisgud/Word-Guess-Game'>Repo</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class="col Aligner">
+                            <div class="card text-center bg-dark text-black m-2 Aligner-item">
+                                <img class="card-img" src="media/CrystalClick.png" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content">
+                                    <h5 class="card-title bg-light">
+                                        <a href='https://chrisgud.github.io/unit-4-game/'>Crystal Clicker Game</a> -
+                                        <a href='https://github.com/chrisgud/unit-4-game'>Repo</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class="col Aligner">
+                            <div class="card text-center bg-dark text-black m-2 Aligner-item">
+                                <img class="card-img" src="media/TriviaGame.png" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column">
+                                    <h5 class="card-title bg-light">
+                                        <a href='https://chrisgud.github.io/TriviaGame/'>Trivia Game</a> -
+                                        <a href='https://github.com/chrisgud/TriviaGame'>Repo</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class="col Aligner">
+                            <div class="card text-center bg-dark text-black m-2 Aligner-item">
+                                <img class="card-img" src="media/giftastic.png" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column">
+                                    <h5 class="card-title bg-light">
+                                        <a href='https://chrisgud.github.io/giftastic/'>Giftastic Gifs</a> -
+                                        <a href='https://github.com/chrisgud/giftastic'>Repo</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class="col Aligner">
+                            <div class="card text-center bg-dark text-black m-2 Aligner-item">
+                                <img class="card-img" src="media/TrainScheduler.png" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column">
+                                    <h5 class="card-title bg-light">
+                                        <a href='https://chrisgud.github.io/train-scheduler/'>Train Scheduler</a> -
+                                        <a href='https://github.com/chrisgud/train-scheduler'>Repo</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row Aligner'>
+
+                        <div class="card text-center bg-dark text-black m-2 Aligner-item">
+                            <img class="card-img" src="media/NewsViews.png" alt="Card image">
+                            <div class="card-img-overlay d-flex flex-column">
+                                <h5 class="card-title bg-light">
+                                    <a href='https://hibbarcd.github.io/Project1/'>News &amp; Views</a> -
+                                    <a href='https://github.com/Hibbarcd/Project1'>Repo</a>
+                                </h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="footer-copyright fixed-bottom text-center py-3 bg-light m-0">©2018
+    </div>
 
-        </div>
+
+    <div class="footer-copyright text-center py-0 bg-dark m-0">
+        <a class="navbar-brand bg-dark text-white py-3 px-2 m-0" href='mailto:chrisgud85@gmail.com'>
+            <i class="far fa-envelope"></i>
+        </a>
+        <a class="navbar-brand bg-dark text-white py-3 px-2 m-0" href='https://www.linkedin.com/in/chris-gudmundsson'>
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="navbar-brand bg-dark text-white py-3 px-2 m-0" href='https://github.com/chrisgud'>
+            <i class="fab fa-github-square"></i>
+        </a>
+        <a class="navbar-brand bg-dark text-white p-3 m-0">Chris Gudmundsson ©2018 </a>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
